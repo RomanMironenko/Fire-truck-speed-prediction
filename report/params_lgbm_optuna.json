@@ -1,0 +1,1 @@
+{"n_estimators": 1000, "learning_rate": 0.03333279005149242, "max_depth": 10, "num_leaves": 580, "bagging_fraction": 0.6877752390676082, "bagging_freq": 1, "boosting_type": "gbdt", "random_state": 10}

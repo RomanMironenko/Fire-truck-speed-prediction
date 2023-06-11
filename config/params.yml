@@ -1,0 +1,169 @@
+preprocessing:
+  path_open: ../data/very_raw_data/tracks/
+  data: ../data/raw_data/data.csv
+  train: ../data/train/train.csv
+  id_auto: ../data/very_raw_data/identifiers_auto.csv
+  change_type_columns:
+    start_date_and_time: datetime64[ns]
+    end_date_and_time: datetime64[ns]
+  distance: ['start_latitude', 'start_longitude', 'end_latitude', 'end_longitude']
+  travel: ['start_date_and_time', 'end_date_and_time']
+  sep: ';'
+  encoding: 'cp1251'
+  id: 'ID'
+  name_column_time: 'start_date_and_time'
+  name_column_model: 'model'
+  car_characteristics:
+    max_speed_km/h:
+      'ASA_(GAZ-_32590L)': 90
+      'ASA_(IVECO_MAGIRUS_RW-DAILY_65C18D)': 100
+      'DLK-52_Vario_SS_-_shassi:Iveko': 98
+      'ATs-3.2-40/4/43253/_-_shassi:KamAZ': 90
+      'ASA_(IVECO_Magirus_RW-Daily_70C15D)': 90
+      'TP-34/F_34_HDT_Mercedes-Actros/_-_shassi:Mercedes': 80
+      'ABG-3/Iveko_ML100E18_-_shassi:Iveko': 90
+      'AL-30/DLK_23-12_n.B._GL/_-_shassi:Iveko': 98
+      'AL-55/DLK-55_CS/_-_shassi:Iveko': 80
+      'ATs-8.0-70/43118/_-_shassi:KamAZ': 90
+      'ATs-6.0-70/4/MAN/_-_shassi:MAN': 90
+      'DL-50/Iveko-Magirus/_-_shassi:Iveko': 98
+      'SPASA_-_shassi:Iveko': 100
+      'ATs-2.0-40/4/4308/_-_shassi:KamAZ': 100
+      'ATs-2.5-40/4308/_-_shassi:KamAZ': 90
+      'AL-30/DLK_23-12_CS_GL/_-_shassi:Iveko': 98
+      'ASA_(MERCEDES-BENZ_SPRINTER_MB413)': 90
+      'APT-6.5-40/53215/': 80
+      'SPASA_6_(IVECO_ML_100_E_18)': 90
+      'ANR-60/MAN': 90
+      'AL-42DLK_42CS_-_shassi:Iveko': 90
+      'ASA_(IVECO_MAGIRUS_RW-DAILY_65C15D)': 100
+      'ASA_RW_kran_(MERCEDES-BENZ/MB_ATEGO_1325)': 90
+      'AG_GWG_7_(MERCEDES-BENZ_ATEGO_1325AF)': 100
+    full_mass_kg:
+      'ASA_(GAZ-_32590L)': 3500
+      'ASA_(IVECO_MAGIRUS_RW-DAILY_65C18D)': 12000
+      'DLK-52_Vario_SS_-_shassi:Iveko': 24380
+      'ATs-3.2-40/4/43253/_-_shassi:KamAZ': 15500
+      'ASA_(IVECO_Magirus_RW-Daily_70C15D)': 7000
+      'TP-34/F_34_HDT_Mercedes-Actros/_-_shassi:Mercedes': 24500
+      'ABG-3/Iveko_ML100E18_-_shassi:Iveko': 9500
+      'AL-30/DLK_23-12_n.B._GL/_-_shassi:Iveko': 14200
+      'AL-55/DLK-55_CS/_-_shassi:Iveko': 24380
+      'ATs-8.0-70/43118/_-_shassi:KamAZ': 20900
+      'ATs-6.0-70/4/MAN/_-_shassi:MAN': 18000
+      'DL-50/Iveko-Magirus/_-_shassi:Iveko': 24000
+      'SPASA_-_shassi:Iveko': 12000
+      'ATs-2.0-40/4/4308/_-_shassi:KamAZ': 11900
+      'ATs-2.5-40/4308/_-_shassi:KamAZ': 11900
+      'AL-30/DLK_23-12_CS_GL/_-_shassi:Iveko': 14250
+      'ASA_(MERCEDES-BENZ_SPRINTER_MB413)': 3500
+      'APT-6.5-40/53215/': 19000
+      'SPASA_6_(IVECO_ML_100_E_18)': 9500
+      'ANR-60/MAN': 12300
+      'AL-42DLK_42CS_-_shassi:Iveko': 15800
+      'ASA_(IVECO_MAGIRUS_RW-DAILY_65C15D)': 7000
+      'ASA_RW_kran_(MERCEDES-BENZ/MB_ATEGO_1325)': 12000
+      'AG_GWG_7_(MERCEDES-BENZ_ATEGO_1325AF)': 13500
+    engine_power_l_s:
+      'ASA_(GAZ-_32590L)': 106
+      'ASA_(IVECO_MAGIRUS_RW-DAILY_65C18D)': 194
+      'DLK-52_Vario_SS_-_shassi:Iveko': 333
+      'ATs-3.2-40/4/43253/_-_shassi:KamAZ': 210
+      'ASA_(IVECO_Magirus_RW-Daily_70C15D)': 146
+      'TP-34/F_34_HDT_Mercedes-Actros/_-_shassi:Mercedes': 360
+      'ABG-3/Iveko_ML100E18_-_shassi:Iveko': 177
+      'AL-30/DLK_23-12_n.B._GL/_-_shassi:Iveko': 299
+      'AL-55/DLK-55_CS/_-_shassi:Iveko': 360
+      'ATs-8.0-70/43118/_-_shassi:KamAZ': 300
+      'ATs-6.0-70/4/MAN/_-_shassi:MAN': 290
+      'DL-50/Iveko-Magirus/_-_shassi:Iveko': 360
+      'SPASA_-_shassi:Iveko': 194
+      'ATs-2.0-40/4/4308/_-_shassi:KamAZ': 185
+      'ATs-2.5-40/4308/_-_shassi:KamAZ': 185
+      'AL-30/DLK_23-12_CS_GL/_-_shassi:Iveko': 299
+      'ASA_(MERCEDES-BENZ_SPRINTER_MB413)': 109
+      'APT-6.5-40/53215/': 240
+      'SPASA_6_(IVECO_ML_100_E_18)': 177
+      'ANR-60/MAN': 290
+      'AL-42DLK_42CS_-_shassi:Iveko': 299
+      'ASA_(IVECO_MAGIRUS_RW-DAILY_65C15D)': 194
+      'ASA_RW_kran_(MERCEDES-BENZ/MB_ATEGO_1325)': 177
+      'AG_GWG_7_(MERCEDES-BENZ_ATEGO_1325AF)': 245
+    type_auto:
+      'ASA_(GAZ-_32590L)': ASA
+      'ASA_(IVECO_MAGIRUS_RW-DAILY_65C18D)': ASA
+      'DLK-52_Vario_SS_-_shassi:Iveko': AL/AKP
+      'ATs-3.2-40/4/43253/_-_shassi:KamAZ': ATs/ANR
+      'ASA_(IVECO_Magirus_RW-Daily_70C15D)': ASA
+      'TP-34/F_34_HDT_Mercedes-Actros/_-_shassi:Mercedes': AL/AKP
+      'ABG-3/Iveko_ML100E18_-_shassi:Iveko': ABG
+      'AL-30/DLK_23-12_n.B._GL/_-_shassi:Iveko': AL/AKP
+      'AL-55/DLK-55_CS/_-_shassi:Iveko': AL/AKP
+      'ATs-8.0-70/43118/_-_shassi:KamAZ': ATs/ANR
+      'ATs-6.0-70/4/MAN/_-_shassi:MAN': ATs/ANR
+      'DL-50/Iveko-Magirus/_-_shassi:Iveko': AL/AKP
+      'SPASA_-_shassi:Iveko': ASA
+      'ATs-2.0-40/4/4308/_-_shassi:KamAZ': ATs/ANR
+      'ATs-2.5-40/4308/_-_shassi:KamAZ': ATs/ANR
+      'AL-30/DLK_23-12_CS_GL/_-_shassi:Iveko': AL/AKP
+      'ASA_(MERCEDES-BENZ_SPRINTER_MB413)': ASA
+      'APT-6.5-40/53215/': APT
+      'SPASA_6_(IVECO_ML_100_E_18)': ABG
+      'ANR-60/MAN': ATs/ANR
+      'AL-42DLK_42CS_-_shassi:Iveko': AL/AKP
+      'ASA_(IVECO_MAGIRUS_RW-DAILY_65C15D)': ASA
+      'ASA_RW_kran_(MERCEDES-BENZ/MB_ATEGO_1325)': ASA
+      'AG_GWG_7_(MERCEDES-BENZ_ATEGO_1325AF)': ABG
+
+traning:
+  drop_columns: ['id', 'start_progression', 'start_latitude', 'start_longitude',
+  'start_elevation', 'start_date_and_time', 'end_progression', 'end_latitude',
+  'end_longitude', 'end_elevation', 'end_date_and_time', 'distance_m', 'travel_time_s',
+  'speed_m/s', 'month']
+  target_column: speed_km/h
+  test_size: 0.2
+  eval_metric_rf: mae
+  eval_metric_xgboost: rmsle
+  eval_metric_lgbm: rmsle_lgbm
+  validation_size: 0.16
+  random_state: 42
+  n_trials: 10
+  n_folds: 5
+  model_path_xgboost_optuna: ../models/model_xgboost_optuna.joblib
+  model_path_lgbm_optuna: ../models/model_lgbm_optuna.joblib
+  model_path_cb_optuna: ../models/model_cb_optuna.joblib
+  model_path_rf_optuna: ../models/model_rf_optuna.joblib
+  model_path_xgboost: ../models/model_xgboost.joblib
+  model_path_lgbm: ../models/model_lgbm.joblib
+  model_path_cb: ../models/model_cb.joblib
+  model_path_rf: ../models/model_rf.joblib
+  params_path_rf_optuna: ../report/params_rf_optuna.json
+  params_path_xgboost_optuna: ../report/params_xgboost_optuna.json
+  params_path_lgbm_optuna: ../report/params_lgbm_optuna.json
+  params_path_cb_optuna: ../report/params_cb_optuna.json
+
+evaluate:
+  drop_columns: [ 'id', 'start_progression', 'start_latitude', 'start_longitude',
+                  'start_elevation', 'start_date_and_time', 'end_progression', 'end_latitude',
+                  'end_longitude', 'end_elevation', 'end_date_and_time', 'distance_m', 'travel_time_s', ]
+  columns_order: ['model', 'speed_km/h', 'days_of_the_week', 'day_type', 'max_speed_km/h', 'full_mass_kg',
+                  'engine_power_l_s', 'type_auto', 'pickup_hour']
+  columns: [ 'model', 'days_of_the_week', 'day_type', 'max_speed_km/h', 'full_mass_kg',
+                   'engine_power_l_s', 'type_auto', 'pickup_hour' ]
+
+backend:
+  path_open: ../data/very_raw_data/tracks/
+  data: ../data/raw_data/data.csv
+  train: ../data/train/train_service.csv
+  id_auto: ../data/very_raw_data/identifiers_auto.csv
+  metrics_path: ../report/metrics.json
+  model_path: ../models/model.joblib
+  study_path: ../models/study.joblib
+
+endpoints:
+  train: 'http://localhost:8000/train'
+  predict_input: 'http://localhost:8000/predict_input'
+#  train: 'http://fastapi:8000/train'
+#  predict_input: 'http://fastapi:8000/predict_input'
+
+

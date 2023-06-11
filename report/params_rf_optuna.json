@@ -1,0 +1,1 @@
+{"n_estimators": 30, "criterion": "mae", "max_features": "log2", "max_samples": 0.5765492265447927, "max_depth": 11, "bootstrap": true, "n_jobs": -1, "random_state": 10, "verbose": 0}

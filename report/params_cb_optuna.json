@@ -1,0 +1,1 @@
+{"n_estimators": 1000, "learning_rate": 0.18960607677504196, "random_seed": 10, "max_depth": 12, "grow_policy": "Depthwise", "allow_writing_files": false}

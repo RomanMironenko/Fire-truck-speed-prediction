@@ -1,0 +1,6 @@
+.idea/
+.ipynb_checkpoints/
+backend/.idea/
+notebooks/.ipynb_checkpoints/
+backend/__pycache__/
+backend/src/__pycache__/
